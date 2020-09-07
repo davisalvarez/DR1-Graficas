@@ -22,27 +22,25 @@ img.glClear()
 
 #______________________________
 
-brick = Material(diffuse=color(0.8, 0.25, 0.25))
-stone = Material(diffuse=color(0.4, 0.4, 0.4))
-grass = Material(diffuse=color(0.5, 1, 0))
-
 nieve = Material(diffuse=color(1, 1, 1))
 wakanda = Material(diffuse=color(0, 0, 0))
-
-#Botones
-#img.scene.append(Esfera((0, -1., -4.5), 1, wakanda))
-#img.scene.append(Esfera((0, 0, -4.5), 1, wakanda))
-img.scene.append(Esfera((0, -1.4, -4.5), 0.3, wakanda))
+zanahoria = Material(diffuse=color(1, 0.26, 0))
+cielo = Material(diffuse=color(0.53,0.81,0.92))
 
 #Cuerpo
-#img.scene.append(Esfera((0, 1.6, -5), 0.6, nieve))
-#img.scene.append(Esfera((0, 0.2, -5), 0.8, nieve))
-img.scene.append(Esfera((0, -1.6, -5), 1, nieve))
+img.scene.append(Esfera((0, 10, -31), 4, nieve))
+img.scene.append(Esfera((0, 2, -30), 5, nieve))
+img.scene.append(Esfera((0, -8, -30), 7, nieve))
 
+#Cara
+#img.scene.append(Esfera((0, -1, -4.5), 0.25, wakanda))
 
+#Botones
+img.scene.append(Esfera((0, 1.5, -25), 1, wakanda))
+img.scene.append(Esfera((0, -1.8, -25), 1.2, wakanda))
+img.scene.append(Esfera((0, -7, -25), 2.3, wakanda))
 
 img.mcqueenRender()
-
 
 
 img.glFinish() #5
