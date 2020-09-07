@@ -2,7 +2,6 @@ from utilidades import *
 from ModeloOBJ import *
 from Poligono import *
 from numpy import cos, sin, tan
-import numpy as np
 
 BLACK = color(0,0,0)
 WHITE = color(1,1,1)
@@ -196,15 +195,12 @@ class render(object):
                 Px = 2 * ( (x+0.5) / self.width) - 1
                 Py = 2 * ( (y+0.5) / self.height) - 1
 
-                #FOV(angulo de vision), asumiendo que el near plane esta a 1 unidad de la camara
-                t = tan( (self.fov * np.pi / 180) / 2 )
+                t = tan(degree2radian(self.fov /2))
                 r = t * self.width / self.height
                 Px *= r
                 Py *= t
 
-                #Nuestra camara siempre esta viendo hacia -Z
                 direction = [Px, Py, -1]
-                #direction = direction / np.linalg.norm(direction)
                 direction = normalizarVector(direction)
                 material = None
 

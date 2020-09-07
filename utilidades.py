@@ -78,6 +78,15 @@ def normalizarVector(vector):
         return (0,0,0)
     return  vector
 
+def magnitudVector(vector):
+    try:
+        #largo del vector
+        largo =  (vector[0]**2 + vector[1]**2 + vector[2]**2)**0.5
+    except ZeroDivisionError:
+        #print("Cero!!!!!!!!!!")
+        return 0
+    return  largo
+
 #Calcula coordenadas Barycentricas
 def baryCoords(A, B, C, P):
     # u es para la A, v es para B, w para C
