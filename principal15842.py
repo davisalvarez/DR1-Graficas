@@ -33,9 +33,16 @@ img.scene.append(Esfera((0, 2, -30), 5, nieve))
 img.scene.append(Esfera((0, -8, -30), 7, nieve))
 
 #Cara
-img.scene.append(Esfera((0, 6.5, -25), 0.8, zanahoria))
-img.scene.append(Esfera((-1.4, 8.9, -25), 0.7, cielo))
-img.scene.append(Esfera((1.4, 8.9, -25), 0.7, cielo))
+img.scene.append(Esfera((0, 7.7, -25), 0.8, zanahoria))
+img.scene.append(Esfera((-1.4, 9.6, -25), 0.7, cielo))
+img.scene.append(Esfera((1.4, 9.6, -25), 0.7, cielo))
+
+#boca
+img.scene.append(Esfera((-1, 5.9, -25), 0.3, wakanda))
+img.scene.append(Esfera((-1.8, 6.5, -25), 0.3, wakanda))
+img.scene.append(Esfera((0, 5.7, -25), 0.3, wakanda)) #Centro
+img.scene.append(Esfera((1, 5.9, -25), 0.3, wakanda))
+img.scene.append(Esfera((1.8, 6.5, -25), 0.3, wakanda))
 
 #Botones
 img.scene.append(Esfera((0, 1.5, -25), 1, wakanda))
@@ -46,7 +53,6 @@ img.mcqueenRender()
 
 
 img.glFinish() #5
-print("Codigo de prueba")
 
 
 
